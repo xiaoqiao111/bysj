@@ -166,6 +166,7 @@ for file_name in file_list:
         # 输入的信号数据，格式为（时间，通道，采样点）的三维数组。
         feature1 = extract_power_spectral_feature(eeg_data1,state=250)
         features.append(feature1)
+features = np.array(features)
         #print(feature1.shape)  # (5, 1)
 
         # pxx = extract_power_spectral_feature(eeg_data, 250)
